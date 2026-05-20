@@ -4,7 +4,7 @@ Bu proje, SOC (Security Operations Center) mantigina uygun olarak hazirlanmis bi
 
 ## Proje Amaci
 
-Projenin amaci:
+Bu projenin temel amaci:
 
 - Siber saldiri davranislarini analiz etmek
 - Ag trafigi ozelliklerini incelemek
@@ -24,19 +24,19 @@ Projenin amaci:
 
 ## Yapilan Analizler
 
-### EDA (Exploratory Data Analysis)
+### Exploratory Data Analysis (EDA)
 
-- Attack type distribution
-- Protocol distribution
-- Top destination ports analysis
-- Bytes sent analysis
-- Correlation analysis
+- Attack type distribution analizi
+- Protocol distribution analizi
+- Top destination ports analizi
+- Bytes sent analizi
+- Korelasyon analizi
 
 ### MITRE ATT&CK Mapping
 
 Projede tespit edilen saldiri davranislari MITRE ATT&CK framework'u ile eslestirilmistir.
 
-Ornek teknikler:
+Kullanilan tekniklerden bazilari:
 
 - T1110 - Brute Force
 - T1046 - Network Service Scanning
@@ -45,27 +45,23 @@ Ornek teknikler:
 - T1071 - Application Layer Protocol
 - T1059 - Command and Scripting Interpreter
 
-## Gorseller
+## Proje Yapisi
 
-### Attack Type Distribution
-
-![Attack Distribution](visuals/attack_type_distribution.png)
-
-### Protocol Distribution
-
-![Protocol Distribution](visuals/protocol_distribution.png)
-
-### Top Destination Ports
-
-![Top Ports](visuals/top_ports.png)
-
-### MITRE ATT&CK Mapping
-
-![MITRE Mapping](visuals/mitre_attack_mapping.png)
+```text
+Cyber-Threat-Detection/
+│
+├── data/
+├── notebooks/
+├── visuals/
+├── README.md
+├── README_TR.md
+├── README_EN.md
+└── requirements.txt
+```
 
 ## Gelecek Gelistirmeler
 
-- Gercek zamanli dashboard
+- Gercek zamanli dashboard sistemi
 - Threat monitoring paneli
 - Gelismis anomaly detection
 - Makine ogrenmesi tabanli saldiri tespiti
